@@ -23,7 +23,6 @@ echo -e "server {
 sudo /etc/init.d/nginx restart
 sudo tar -xzvf ~/dashboard.tar.gz -C /usr/share/nginx/
 cd /usr/share/nginx/dashboard
-sudo cp ~/database.yml /usr/share/nginx/dashboard/config
 sudo chown -R nginx:nginx *
 sudo bundle install
 sudo rake generate_session_store
